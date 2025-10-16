@@ -1,58 +1,60 @@
 # 🖥 PIFuHD – Patched Colab Version
 
-### ⚡ Quick Start
-Open in Colab and **run all cells sequentially** to go from **2D image → 3D mesh → OBJ output**:  
-[Run in Colab](https://colab.research.google.com/drive/1aTgf-WrwwGyXeC9Yk8oddEHshv5x5Zt9?usp=sharing)
+> ⚠️ Note: This repository is a patched version of **PIFuHD by Facebook Research**.  
+> The modifications (Colab compatibility fixes, updated dependencies, and PyTorch 2.6+ support) are © 2025 **Jayesh Dethe**.  
+> Redistribution is allowed under the same **MIT License** with proper attribution.
 
 ---
 
-👉 **Original PIFuHD GitHub**: [https://github.com/facebookresearch/pifuhd](https://github.com/facebookresearch/pifuhd)
+## 🧩 About This Project
 
-This repository contains a **fixed and fully runnable version** of the original PIFuHD Google Colab notebook. Several issues were resolved to make it compatible with **PyTorch 2.6+** and the latest Colab environment.
+This repository contains a **fixed and fully runnable version** of the original **PIFuHD notebook**.  
+Several issues were resolved to make it compatible with **PyTorch 2.6+** and modern Python environments.
 
 ---
 
 ## 🔧 Main Fixes
 
 - Updated `recon.py` for safe checkpoint loading with PyTorch 2.6+  
-- Fixed import and dependency issues in Colab  
+- Fixed import and dependency issues  
 - Corrected path handling and output directories  
 - Resolved version conflicts  
-- Ensured full pipeline execution: 2D Image → 3D mesh → OBJ output  
+- Ensured full pipeline execution: 2D Image → 3D Mesh → OBJ Output  
 
-> ✅ Compatible with latest Colab + PyTorch 2.6+  
+> ✅ Fully compatible with modern Python + PyTorch 2.6+
 
 ---
 
 ## 🚀 How to Use
 
-1. **Open the notebook:** [Run in Colab](https://colab.research.google.com/drive/1aTgf-WrwwGyXeC9Yk8oddEHshv5x5Zt9?usp=sharing)  
-2. **Run all cells sequentially:**  
-    - Install dependencies  
-    - Download pretrained checkpoints  
-    - Run `recon.py` to create **3D meshes**  
-3. **If output is not generated on the first run:**  
-    - This is a common Python import/caching issue in Colab  
-    - Simply **run the entire notebook a second time**  
-    - This ensures all local modules are compiled and cached (`__pycache__/`), so imports work properly  
+1. **Clone this repository**  
+2. **Open the notebook** in a Python environment that supports Jupyter notebooks  
+3. **Run all cells sequentially:**  
+   - Install dependencies  
+   - Download pretrained checkpoints  
+   - Run `recon.py` to create **3D meshes**  
+4. **If output is not generated on the first run:**  
+   - This is a common Python import/caching issue  
+   - Simply **run the entire notebook a second time**  
+   - This ensures all local modules are compiled and cached (`__pycache__/`)  
 
 ---
 
 ## 🛠 Tech Stack
 
-| Layer         | Tools Used                |
-|---------------|---------------------------|
-| Deep Learning | PyTorch                   |
-| Data Handling | NumPy, OpenCV, PIL       |
-| Visualization | Matplotlib, OpenCV       |
-| Notebook      | Google Colab             |
+| Layer         | Tools Used          |
+|---------------|---------------------|
+| Deep Learning | PyTorch             |
+| Data Handling | NumPy, OpenCV, PIL  |
+| Visualization | Matplotlib, OpenCV  |
+| Notebook      | Jupyter / Colab     |
 
 ---
 
 ## 👥 Credits
 
-- **Original Creator**: [PIFuHD – Facebook Research](https://github.com/facebookresearch/pifuhd)  
-- **Patched & Updated By**: Jayesh Dethe  
+- **Original Creator:** [PIFuHD – Facebook Research](https://github.com/facebookresearch/pifuhd)  
+- **Patched & Updated By:** Jayesh Dethe  
 
 ---
 
@@ -68,10 +70,16 @@ If you find this project useful, please:
 
 ## 📝 Notes
 
-- This version addresses runtime errors, checkpoint loading issues, and Colab compatibility problems  
+- This version addresses runtime errors, checkpoint loading issues, and Python environment compatibility problems  
 - Users can run the notebook directly without manual fixes  
-- **Tip for Colab:** If your final cell does not produce output, run the entire notebook a second time to resolve Python import caching issues  
-- For feedback or suggestions, please open an **Issue**  
+- **Tip:** If the final cell does not produce output, re-run the notebook to fix Python import caching issues  
+- For feedback or suggestions, please open an **Issue**
+
+---
+
+## ⚖️ License
+
+This project is released under the **MIT License (© 2025 Jayesh Dethe)**. You are free to use and modify it with proper credit.
 
 ---
 
