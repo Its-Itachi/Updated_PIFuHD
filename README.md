@@ -9,7 +9,7 @@
 ## 🧩 About This Project
 
 This repository contains a **fixed and fully runnable version** of the original **PIFuHD notebook**.  
-Several issues were resolved to make it compatible with **PyTorch 2.6+** and modern Python environments.
+Several issues were resolved to make it compatible with **PyTorch 2.6+** and the latest Google Colab environment.
 
 ---
 
@@ -21,14 +21,14 @@ Several issues were resolved to make it compatible with **PyTorch 2.6+** and mod
 - Resolved version conflicts  
 - Ensured full pipeline execution: 2D Image → 3D Mesh → OBJ Output  
 
-> ✅ Fully compatible with modern Python + PyTorch 2.6+
+> ✅ Fully compatible with latest Google Colab + PyTorch 2.6+
 
 ---
 
 ## 🚀 How to Use
 
 1. **Clone this repository**  
-2. **Open the notebook** in a Python environment that supports Jupyter notebooks  
+2. **Open the notebook** in Google Colab  
 3. **Run all cells sequentially:**  
    - Install dependencies  
    - Download pretrained checkpoints  
@@ -47,7 +47,7 @@ Several issues were resolved to make it compatible with **PyTorch 2.6+** and mod
 | Deep Learning | PyTorch             |
 | Data Handling | NumPy, OpenCV, PIL  |
 | Visualization | Matplotlib, OpenCV  |
-| Notebook      | Jupyter / Colab     |
+| Notebook      | Google Colab        |
 
 ---
 
@@ -70,7 +70,7 @@ If you find this project useful, please:
 
 ## 📝 Notes
 
-- This version addresses runtime errors, checkpoint loading issues, and Python environment compatibility problems  
+- This version addresses runtime errors, checkpoint loading issues, and Google Colab compatibility problems  
 - Users can run the notebook directly without manual fixes  
 - **Tip:** If the final cell does not produce output, re-run the notebook to fix Python import caching issues  
 - For feedback or suggestions, please open an **Issue**
